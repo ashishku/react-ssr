@@ -1,3 +1,6 @@
+# Project Specific / build files
+public/
+
 # Logs
 logs
 *.log
@@ -59,3 +62,7 @@ typings/
 
 # next.js build output
 .next
+
+# IDE files
+.idea
+.vscode

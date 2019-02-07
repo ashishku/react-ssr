@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"/>
+    <![endif]-->
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.min.js"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div id="app-root">
+        <%- html %>
+    </div>
+
+    <script>
+      window.__STATE__ = <%- JSON.stringify(preloadedState || {}) %>;
+    </script>
+    <script src="/app.js"></script>
+</body>
+</html>
